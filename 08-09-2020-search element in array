@@ -1,0 +1,14 @@
+from array import *
+arr=array('i',[])
+n=int(input("enter length of the array: "))
+for i in range(n):
+    x=int(input("enter the element: "))
+    arr.append(x)
+print(arr)
+s=int(input("enter element to search: "))
+k=0
+for e in arr:
+    if e==s:
+        break
+    k+=1
+print("index is",arr.index(s))
